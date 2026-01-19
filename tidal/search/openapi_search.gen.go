@@ -73,7 +73,7 @@ type AlbumsAttributes struct {
 	BarcodeId string `json:"barcodeId"`
 
 	// Copyright Copyright information
-	Copyright *string `json:"copyright,omitempty"`
+	Copyright interface{} `json:"copyright,omitempty"`
 
 	// Duration Duration (ISO-8601)
 	Duration string `json:"duration"`
@@ -577,7 +577,7 @@ type TracksAttributes struct {
 	Availability *[]TracksAttributesAvailability `json:"availability,omitempty"`
 
 	// Copyright Copyright information
-	Copyright *string `json:"copyright,omitempty"`
+	Copyright interface{} `json:"copyright,omitempty"`
 
 	// Duration Duration expressed in accordance with ISO 8601
 	Duration string `json:"duration"`
@@ -644,7 +644,7 @@ type VideosAttributes struct {
 	Availability *[]VideosAttributesAvailability `json:"availability,omitempty"`
 
 	// Copyright Copyright information
-	Copyright *string `json:"copyright,omitempty"`
+	Copyright interface{} `json:"copyright,omitempty"`
 
 	// Duration Duration expressed in accordance with ISO 8601
 	Duration string `json:"duration"`
